@@ -44,11 +44,15 @@ body {
   width: 80%;
   margin: 0 auto;
 }
-.profile-pic {
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 5rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
   overflow: hidden;
+  cursor: pointer;
 }
 
 img {
@@ -84,7 +88,7 @@ header {
   top: 0;
   width: 100%;
   background-color: var(--color-white);
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 header .search-nav {
   display: flex;
@@ -108,7 +112,21 @@ header .search-bar {
   width: 30vw;
   border: 0;
   font-size: 1.8rem;
+  color: var(--color-dark);
+}
+.search-bar input::placeholder {
+  color: var(--color-gray);
 }
 .search-bar input:focus {
   outline: 0;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
 }
