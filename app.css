@@ -149,14 +149,20 @@ main .container {
   display: flex;
   flex-direction: column;
 }
+.menu ion-icon {
+  font-size: 1.8rem;
+}
 .menu-item {
   font-size: 1.8rem;
   display: inline-flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   font-size: 1.4rem;
   cursor: pointer;
   padding: 1.8rem;
+}
+.menu-item ion-icon {
+  margin-left: 1rem;
 }
 .menu-item:hover {
   background-color: var(--color-secondary);
