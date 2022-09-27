@@ -120,6 +120,15 @@ header .search-bar {
 .search-bar input:focus {
   outline: 0;
 }
+
+main {
+  margin: 10rem 0;
+}
+main .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+/* Sidebar */
 .menu {
   display: flex;
   flex-direction: column;
@@ -129,4 +138,5 @@ header .search-bar {
   align-items: center;
   gap: 0.5rem;
   font-size: 1.8rem;
+  cursor: pointer;
 }
