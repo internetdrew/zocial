@@ -48,33 +48,92 @@
             </div>
           </div>
 
+          <!-- Sidebar -->
           <div class="sidebar">
             <div class="menu">
               <div class="menu-item">
                 <ion-icon name="home-outline"></ion-icon>
                 <h3>Home</h3>
               </div>
-              <div class="menu-item">
+              <div class="menu-item active">
                 <ion-icon name="compass-outline"></ion-icon>
                 <h3>Explore</h3>
               </div>
               <div class="menu-item">
-                <ion-icon name="notifications-outline"></ion-icon>
+                <div class="menu-item--icon">
+                  <ion-icon name="notifications-outline"></ion-icon
+                  ><span
+                    ><small
+                      class="notification-count num-alert"
+                      id="notification-count"
+                      >9+</small
+                    ></span
+                  >
+                </div>
                 <h3>Notifications</h3>
-                <div class="notifications-popup">
-                  <div class="profile-photo">
-                    <img src="./images/pfp-2.jpg" alt="" />
-                  </div>
-                  <div class="notification-body">
-                    <div class="notification">
-                      <b>Sandra Osario</b> accepted your friend request
+                <!-- Notification popup -->
+                <div class="notifications-popup" id="notifications">
+                  <div class="notification">
+                    <div class="profile-photo">
+                      <img src="./images/pfp-2.jpg" alt="" />
                     </div>
-                    <small class="text-muted">X days ago</small>
+                    <div class="notification-body">
+                      <b>Sandra Osario</b> accepted your friend request
+                      <small class="text-muted">X days ago</small>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="profile-photo">
+                      <img src="./images/pfp-3.jpg" alt="" />
+                    </div>
+                    <div class="notification-body">
+                      <b>Sandra Osario</b> accepted your friend request
+                      <small class="text-muted">X days ago</small>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="profile-photo">
+                      <img src="./images/pfp-4.jpg" alt="" />
+                    </div>
+                    <div class="notification-body">
+                      <b>Sandra Osario</b> accepted your friend request
+                      <small class="text-muted">X days ago</small>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="profile-photo">
+                      <img src="./images/pfp-5.jpg" alt="" />
+                    </div>
+                    <div class="notification-body">
+                      <b>Sandra Osario</b> accepted your friend request
+                      <small class="text-muted">X days ago</small>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="profile-photo">
+                      <img src="./images/pfp-6.jpg" alt="" />
+                    </div>
+                    <div class="notification-body">
+                      <b>Sandra Osario</b> accepted your friend request
+                      <small class="text-muted">X days ago</small>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="profile-photo">
+                      <img src="./images/pfp-7.jpg" alt="" />
+                    </div>
+                    <div class="notification-body">
+                      <b>Sandra Osario</b> accepted your friend request
+                      <small class="text-muted">X days ago</small>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="menu-item">
-                <ion-icon name="mail-outline"></ion-icon>
+                <div class="menu-item--icon">
+                  <ion-icon name="mail-outline"></ion-icon
+                  ><span><small class="message-count num-alert">6</small></span>
+                </div>
                 <h3>Messages</h3>
               </div>
               <div class="menu-item">
