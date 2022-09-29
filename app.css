@@ -90,6 +90,7 @@ header {
   width: 100%;
   background-color: var(--color-white);
   padding: 1rem 0;
+  z-index: 100;
 }
 header .search-nav {
   display: flex;
@@ -124,7 +125,7 @@ header .search-bar {
 
 /* Main Section */
 main {
-  margin: 10rem 0;
+  margin-top: 12rem;
 }
 main .container {
   display: grid;
@@ -134,18 +135,20 @@ main .container {
   position: relative;
 }
 
-.left {
+.left,
+.right {
   height: max-content;
   position: sticky;
-  /* top: 5.4rem; */
+  top: 12rem;
 }
 
+/* Sidebar */
 .sidebar,
 .profile-details {
   background-color: var(--color-white);
   border-radius: var(--card-border-radius);
+  overflow: hidden;
 }
-/* Sidebar */
 
 .profile-details {
   display: flex;
@@ -268,6 +271,7 @@ main .container {
 }
 
 /* Middle */
+
 .middle .stories {
   display: flex;
   justify-content: space-between;
@@ -356,3 +360,5 @@ main .container {
   outline: 0;
   color: var(--color-dark);
 }
+
+/* Post Feed */
