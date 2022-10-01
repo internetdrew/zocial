@@ -343,7 +343,7 @@ main .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin: 2rem 0;
   background: var(--color-white);
   padding: 1rem var(--card-padding);
   border-radius: 4rem;
@@ -362,3 +362,61 @@ main .container {
 }
 
 /* Post Feed */
+.post {
+  background: var(--color-white);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-user {
+  display: flex;
+  gap: 1rem;
+}
+
+.post-edit {
+  cursor: pointer;
+}
+
+.post-photo {
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.4rem;
+  margin: 1rem;
+}
+
+.post .liked-by {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.liked-by > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--color-white);
+  margin-left: -1rem;
+}
+
+.liked-by p {
+  margin-left: 1rem;
+}
