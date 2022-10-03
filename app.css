@@ -472,14 +472,11 @@ main .container {
   gap: 1rem;
   margin-bottom: 1rem;
   align-items: start;
+  overflow: hidden;
 }
 
 .messages .message:last-of-type {
   margin-bottom: 0;
-}
-
-.messages .message {
-  overflow: hidden;
 }
 
 .messages .message p {
@@ -488,4 +485,27 @@ main .container {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.message .profile-photo {
+  position: relative;
+  overflow: visible;
+}
+
+.message .profile-photo img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.message .active-user {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-white);
+  background: var(--color-success);
+  bottom: 0.1rem;
+  right: 0.2rem;
 }
