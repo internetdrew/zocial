@@ -551,3 +551,61 @@ main .container {
   display: flex;
   gap: 1rem;
 }
+
+/* Theme Customization Modal */
+
+.customize-theme {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  font-size: 1.8rem;
+}
+
+.customization-card {
+  background: var(--color-white);
+  padding: 3rem;
+  border-radius: var(--card-border-radius);
+  width: 50%;
+}
+
+.customization-card .font-size {
+  margin-top: 5rem;
+}
+
+.customization-card .font-size > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-light);
+  padding: var(--search-padding);
+  border-radius: var(--card-border-radius);
+}
+
+.font-size .choose-size {
+  background-color: var(--color-secondary);
+  height: 0.3rem;
+  width: 100%;
+  margin: 0 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.choose-size span {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.choose-size span.active {
+  background: var(--color-primary);
+}
