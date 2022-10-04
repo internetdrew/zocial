@@ -151,7 +151,7 @@ main .container {
 }
 
 .right {
-  top: -12rem;
+  top: -34rem;
   bottom: 0;
 }
 
@@ -527,7 +527,6 @@ main .container {
 
 .friend-requests {
   margin-top: 2rem;
-  overflow: scroll;
 }
 
 .friend-requests h4 {
