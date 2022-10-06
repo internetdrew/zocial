@@ -45,3 +45,7 @@ menu.addEventListener('click', e => {
 overlay.addEventListener('click', () => {
   hideNotificationPopup();
 });
+
+notificationPopup.addEventListener('click', e => {
+  if (e.target.closest('.notifications-popup')) console.log('yup');
+});

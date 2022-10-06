@@ -299,15 +299,15 @@ main .container {
   padding: var(--card-padding);
   box-shadow: 0 0 2rem hsl(var(--color-primary), 75% 60% 25%);
   z-index: 20;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 2rem;
   overflow: auto;
-  /* display: none; */
-  transition: 0.3s;
+  transition: 0.3s linear ease-in-out;
 }
 
 .notifications-popup.show {
+  display: block;
   opacity: 1;
 }
 
