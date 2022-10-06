@@ -9,9 +9,11 @@ const deactivateMenuItems = function () {
 };
 
 const showNotificationPopup = function () {
-  console.log(notificationPopup.parentElement);
   notificationPopup.style.display = 'block';
-  console.log(notificationPopup);
+};
+
+const hideNotificationPopup = function () {
+  notificationPopup.style.display = 'none';
 };
 
 // Event Listeners
@@ -23,8 +25,8 @@ menu.addEventListener('click', e => {
   if (menuItem.id === 'notifications-btn') {
     showNotificationPopup();
   }
-});
 
-document.addEventListener('click', e => {
-  console.dir(e.target);
+  if (menuItem.id !== 'notifications-btn') {
+    hideNotificationPopup();
+  }
 });

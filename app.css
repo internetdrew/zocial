@@ -156,11 +156,15 @@ main .container {
 }
 
 /* Sidebar */
-.sidebar,
+.sidebar {
+  background-color: var(--color-white);
+  border-radius: var(--card-border-radius);
+}
+
 .profile-details {
   background-color: var(--color-white);
   border-radius: var(--card-border-radius);
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .profile-details {
@@ -177,9 +181,11 @@ main .container {
   display: flex;
   flex-direction: column;
 }
-.left .menu ion-icon {
+
+.left .menu box-icon {
   font-size: 1.8rem;
 }
+
 .left .menu .menu-item {
   position: relative;
   display: inline-flex;
@@ -194,7 +200,7 @@ main .container {
 .left .menu .menu-item--icon {
   position: relative;
 }
-.menu-item ion-icon {
+.menu-item box-icon {
   margin-left: 1rem;
   color: var(--color-gray);
 }
@@ -221,6 +227,19 @@ main .container {
 .left .menu .menu-item:hover {
   background-color: var(--color-secondary);
   opacity: 0.98;
+}
+
+.menu-item:first-of-type {
+  overflow: hidden;
+}
+
+.menu .menu-item:first-of-type {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.menu .menu-item:last-of-type {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 /* Notifications */
@@ -451,7 +470,7 @@ main .container {
   justify-content: space-between;
   margin-bottom: 1rem;
 }
-.messages--heading ion-icon {
+.messages--heading box-icon {
   font-size: 2rem;
 }
 
@@ -734,7 +753,7 @@ main .container {
     place-items: center;
   }
 
-  .sidebar .menu-item ion-icon {
+  .sidebar .menu-item box-icon {
     font-size: 2.4rem;
   }
 
