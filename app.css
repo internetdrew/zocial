@@ -552,6 +552,10 @@ main .container {
   gap: 1rem;
 }
 
+.action .btn {
+  flex-shrink: 1;
+}
+
 /* Theme Customization Modal */
 
 .customize-theme {
@@ -701,6 +705,15 @@ main .container {
   margin-right: 1rem;
 }
 
+/* Media Queries */
+@media screen and (max-width: 1320px) {
+  .request .action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     width: 96%;
@@ -729,6 +742,12 @@ main .container {
   }
 
   .sidebar h3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .search-nav .search-bar {
     display: none;
   }
 }
