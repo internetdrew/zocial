@@ -270,11 +270,22 @@ main .container {
 .notification-count {
   top: -1rem;
   right: -0.9rem;
+  transition: 0.3s;
 }
 
 .message-count {
   top: -1rem;
   right: -1rem;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .notifications-popup {
@@ -292,6 +303,7 @@ main .container {
   gap: 2rem;
   overflow: auto;
   display: none;
+  transition: 0.3s linear ease;
 }
 
 .left .notifications-popup::before {
@@ -770,6 +782,10 @@ main .container {
 
   .sidebar h3 {
     display: none;
+  }
+
+  .notifications-popup {
+    left: 115%;
   }
 }
 
