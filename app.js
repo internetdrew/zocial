@@ -9,15 +9,22 @@ const deactivateMenuItems = function () {
   menuItems.forEach(item => item.classList.remove('active'));
 };
 
+const activateOverlay = function () {
+  overlay.style.display = 'block';
+};
+const deactivateOverlay = function () {
+  overlay.style.display = 'none';
+};
+
 const showNotificationPopup = function () {
   notificationPopup.style.display = 'block';
   document.querySelector('#notification-count').style.display = 'none';
-  overlay.style.display = 'block';
+  activateOverlay();
 };
 
 const hideNotificationPopup = function () {
   notificationPopup.style.display = 'none';
-  overlay.style.display = 'none';
+  deactivateOverlay();
 };
 
 // Event Listeners
