@@ -281,7 +281,7 @@ main .container {
   position: absolute;
   top: 0;
   left: 105%;
-  width: 55rem;
+  width: 40rem;
   background-color: #fff;
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
@@ -799,5 +799,10 @@ main .container {
 
   .left {
     z-index: 10;
+  }
+
+  .notifications-popup {
+    left: -390%;
+    width: 30rem;
   }
 }
