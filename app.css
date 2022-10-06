@@ -290,6 +290,7 @@ main .container {
 
 .notifications-popup {
   position: absolute;
+  opacity: 0;
   top: 0;
   left: 105%;
   width: 40rem;
@@ -302,8 +303,12 @@ main .container {
   flex-direction: column;
   gap: 2rem;
   overflow: auto;
-  display: none;
-  transition: 0.3s linear ease;
+  /* display: none; */
+  transition: 0.3s;
+}
+
+.notifications-popup.show {
+  opacity: 1;
 }
 
 .left .notifications-popup::before {

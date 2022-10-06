@@ -17,13 +17,13 @@ const deactivateOverlay = function () {
 };
 
 const showNotificationPopup = function () {
-  notificationPopup.style.display = 'block';
+  notificationPopup.classList.add('show');
   document.querySelector('#notification-count').style.display = 'none';
   activateOverlay();
 };
 
 const hideNotificationPopup = function () {
-  notificationPopup.style.display = 'none';
+  notificationPopup.classList.remove('show');
   deactivateOverlay();
 };
 
