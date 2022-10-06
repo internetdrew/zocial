@@ -160,7 +160,7 @@ main .container {
 .profile-details {
   background-color: var(--color-white);
   border-radius: var(--card-border-radius);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .profile-details {
@@ -258,9 +258,9 @@ main .container {
 .notifications-popup {
   position: absolute;
   top: 0;
-  left: 110%;
+  left: 105%;
   width: 55rem;
-  background-color: var(--color-white);
+  background-color: #fff;
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
   box-shadow: 0 0 2rem hsl(var(--color-primary), 75% 60% 25%);
@@ -268,6 +268,7 @@ main .container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  overflow: auto;
   display: none;
 }
 
@@ -735,6 +736,10 @@ main .container {
 
   .sidebar .menu-item ion-icon {
     font-size: 2.4rem;
+  }
+
+  .sidebar .menu-item--notification {
+    z-index: 50;
   }
 
   .left .profile-details {
