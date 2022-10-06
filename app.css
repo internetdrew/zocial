@@ -208,7 +208,7 @@ main .container {
   background-color: var(--color-light);
 }
 
-.left .sidebar .active i,
+.left .sidebar .active box-icon,
 .left .sidebar .active h3 {
   color: var(--color-primary);
 }
