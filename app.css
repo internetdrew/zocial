@@ -303,7 +303,7 @@ main .container {
   flex-direction: column;
   gap: 2rem;
   overflow: auto;
-  transition: 0.3s linear ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .notifications-popup.show {

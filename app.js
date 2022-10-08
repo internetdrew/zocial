@@ -3,28 +3,18 @@
 const menu = document.getElementById('menu');
 const menuItems = document.querySelectorAll('.menu-item');
 const notificationPopup = document.getElementById('notifications-popup');
-const overlay = document.getElementById('overlay');
 
 const deactivateMenuItems = function () {
   menuItems.forEach(item => item.classList.remove('active'));
 };
 
-const activateOverlay = function () {
-  overlay.style.display = 'block';
-};
-const deactivateOverlay = function () {
-  overlay.style.display = 'none';
-};
-
 const showNotificationPopup = function () {
   notificationPopup.classList.add('show');
   document.querySelector('#notification-count').style.display = 'none';
-  activateOverlay();
 };
 
 const hideNotificationPopup = function () {
   notificationPopup.classList.remove('show');
-  deactivateOverlay();
 };
 
 // Event Listeners
@@ -42,10 +32,6 @@ menu.addEventListener('click', e => {
   }
 });
 
-overlay.addEventListener('click', () => {
-  hideNotificationPopup();
-});
-
-notificationPopup.addEventListener('click', e => {
-  if (e.target.closest('.notifications-popup')) console.log('yup');
+window.addEventListener('click', e => {
+  if (!e.target.closest('.menu-item')) hideNotificationPopup();
 });
